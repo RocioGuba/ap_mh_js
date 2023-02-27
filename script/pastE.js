@@ -34,3 +34,39 @@ function crearTarjetas(lista) {
 //le asignamos el valor a template(html)
 
 pastE.innerHTML = tarjetasCargadas;
+
+
+/*
+let cardGroup = document.getElementById("pastE")
+
+const currentDate = data.currentDate;
+const arrayEvents = data.events;
+
+let template = "";
+
+function createCardsPastEvents(arrayEvents, currentDate){
+    for (const event of arrayEvents){
+        if(event.date < currentDate){
+            template += `
+            <div class="row p-4 justify-content-center">
+                <div class="card text-center" style="width: 18rem">
+                  <div class="col-sm-5">
+                    <img src=" ${event.image} "alt=""/>
+                  </div>
+                    <div class="card-body">
+                            <h5 class="">${ event.date }</h5>
+                            <p class="card-text">${ event.category }</p>
+                        <div class="price d-flex justify-content-between">
+                            <p class="card-text">${ event.price }</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        }
+    }
+    cardGroup.innerHTML = template;
+}
+
+createCardsPastEvents(arrayEvents, currentDate)
+*/
